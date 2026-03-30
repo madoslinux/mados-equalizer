@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=madOS Equalizer
+Comment=8-band audio equalizer
+Exec=/usr/local/bin/mados-equalizer
+Icon=audio-volume-balanced
+Terminal=false
+Type=Application
+Categories=Audio;Settings;
+StartupWMClass=mados-equalizer
+StartupNotify=true
