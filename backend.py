@@ -26,7 +26,7 @@ import threading
 import time
 from pathlib import Path
 
-from .presets import FREQUENCY_BANDS
+from presets import FREQUENCY_BANDS
 
 
 CONFIG_DIR = ".config"

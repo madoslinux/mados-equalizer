@@ -18,10 +18,10 @@ from gi.repository import Gtk, Gdk, GLib, Pango
 import cairo
 import threading
 
-from . import __app_id__, __app_name__, __version__
-from .backend import AudioBackend
-from .database import EqualizerStateDB
-from .presets import (
+from __init__ import __app_id__, __app_name__, __version__
+from backend import AudioBackend
+from database import EqualizerStateDB
+from presets import (
     PresetManager,
     FREQUENCY_BANDS,
     BAND_LABELS,
@@ -31,14 +31,14 @@ from .presets import (
     GAIN_DEFAULT,
     BUILTIN_PRESET_ORDER,
 )
-from .translations import (
+from translations import (
     TRANSLATIONS,
     AVAILABLE_LANGUAGES,
     DEFAULT_LANGUAGE,
     get_text,
     detect_system_language,
 )
-from .theme import apply_theme, get_gain_color, get_gain_color_hex, NORD
+from theme import apply_theme, get_gain_color, get_gain_color_hex, NORD
 
 
 class GainIndicator(Gtk.DrawingArea):
